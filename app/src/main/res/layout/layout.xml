@@ -9,12 +9,22 @@
     android:gravity="center"
     android:padding="20dp">
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="Name"
+        android:textSize="24sp" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="@string/string" />
+        android:text="@string/string"
+        />
 
     <ImageView
         android:id="@+id/firstImage"
@@ -23,17 +33,21 @@
         android:visibility="visible"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Output"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
+
 </LinearLayout>

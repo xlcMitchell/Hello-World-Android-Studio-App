@@ -4,6 +4,11 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,5 +28,15 @@ public class MainActivity extends AppCompatActivity {
         image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.spearow));
         TextView myText = findViewById(R.id.textView2);
         myText.setText("Updating text in java");
+        Button button = findViewById(R.id.button);
+        EditText editText = findViewById(R.id.editText);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                myText.setText("Hi " + editText.getText());
+                System.out.println("Clicked!");
+            } });
     }
+
+
+
 }
