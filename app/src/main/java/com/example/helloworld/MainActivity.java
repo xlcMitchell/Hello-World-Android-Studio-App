@@ -30,13 +30,19 @@ public class MainActivity extends AppCompatActivity {
         myText.setText("Updating text in java");
         Button button = findViewById(R.id.button);
         EditText editText = findViewById(R.id.editText);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                myText.setText("Hi " + editText.getText());
-                System.out.println("Clicked!");
-            } });
+
+        button.setOnClickListener(v -> sayHi(myText));
+   //     button.setOnClickListener(new View.OnClickListener() {
+   //         public void onClick(View v) {
+   //             myText.setText("Hi " + editText.getText());
+   //             System.out.println("Clicked!");
+   //         } });
     }
 
+    public void sayHi(TextView txt){
+        EditText editText = findViewById(R.id.editText);
+        txt.setText("Hi " + editText.getText());
+    }
 
 
 }
