@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void sayHi(TextView txt){
         EditText editText = findViewById(R.id.editText);
+        int num = Integer.parseInt(editText.getText().toString());
         txt.setText("Hi " + editText.getText());
     }
 

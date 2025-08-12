@@ -16,6 +16,7 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif"
         android:hint="Name"
+        android:inputType="number"
         android:textSize="24sp" />
 
     <Button
